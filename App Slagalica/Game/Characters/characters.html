@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Slagalica | Slagalica</title>
+	<link rel="stylesheet" type="text/css" href="charactersMain.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+</head>
+<body>
+	<div id="boxProgress">
+		<div id="progressBar"></div>
+	</div>
+	<div id="firstPart">
+		<img src="../../Aserts/avatar.jpg" id="picP0" class="pics" height="400" width="400" style="box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.5);">
+		<div id="boxTime">
+			<div id="progressTime"></div>
+		</div>
+		<img src="../../Aserts/avatar.jpg" id="picP1" class="pics" height="400" width="400" style="box-shadow: 0 0px 40px 40px rgba(0, 0, 0, 0.5);">
+	</div>
+	<div id="secoundPart">
+		<div class="alertSwitch" id="alertSwitchP0">
+			<h2 id="nameP1"></h2>
+		</div>
+		<div id="pointsP1" class="points"></div>
+		<div id="pointsP2" class="points"></div>
+		<div class="alertSwitch" id="alertSwitchP1">
+			<h2 id="nameP2"></h2>
+		</div>
+	</div>
+	<div id="thirdPart">
+		<button type="button" id="btnStop" class="btn btn-primary btn-lg" onclick="stopCharacter();">STOP</button>
+
+		<button type="button" id="confirm" class="btn btn-primary btn-lg" style="display: none;" onclick="checkWord();">POTVRDI</button>
+
+		<div class="alert alert-info" role="alert" id="alertMsg">
+  			Sačekati da istekne vreme i nakon toga prijaviti koliko slova ima vaša reč!
+		</div>
+		
+		<marquee direction="right" id="displayP0" class="names"><h3>Na potezu: <span id="nameP1mar"></span></h3></marquee>
+
+		<marquee direction="left" id="displayP1" class="names"><h3>Na potezu: <span id="nameP2mar"></span></h3></marquee>
+
+		<div id="charters">
+			<div class="letter" id="letter0" onclick="inputChar(this.id)">Q</div>
+			<div class="letter" id="letter1" onclick="inputChar(this.id)">F</div>
+			<div class="letter" id="letter2" onclick="inputChar(this.id)">S</div>
+			<div class="letter" id="letter3" onclick="inputChar(this.id)">F</div>
+			<div class="letter" id="letter4" onclick="inputChar(this.id)">G</div>
+			<div class="letter" id="letter5" onclick="inputChar(this.id)">F</div>
+			<div class="letter" id="letter6" onclick="inputChar(this.id)">D</div>
+			<div class="letter" id="letter7" onclick="inputChar(this.id)">S</div>
+			<div class="letter" id="letter8" onclick="inputChar(this.id)">D</div>
+			<div class="letter" id="letter9" onclick="inputChar(this.id)">S</div>
+			<div class="letter" id="letter10" onclick="inputChar(this.id)">S</div>
+			<div class="letter" id="letter11" onclick="inputChar(this.id)">F</div>
+		</div>
+		<form action="" method="get">
+   			<input type="text" id="playerWord" readonly="" class="result" required="required" placeholder="Unesi reč" />
+   			<input type="reset" value="" readonly="" id="reset" alt="clear" onclick="deleteResult();" />
+		</form>
+		<div id="computerWord" class="result">...</div>
+	</div>
+	<!-- modal for input num of character -->
+	<div id="displayModal">
+		<div class="modalBackground">
+	    	<div id="modal">
+	        	<img src="../../Aserts/slagalicaHeader.jpg" id="header">
+	        	<h6>Uneti broj slova za izabranu reč</h6>
+	        	<div id="player1" class="players">
+	        		<h5><span id="modalNameP1"></span> ima reč od: <input type="number" id="player1Char" style="width: 40px;" min="1" max="12" onKeyUp="if(this.value>12){this.value='12';}else if(this.value<1){this.value='1';}"> slova.</h5>
+	        	</div>
+	       		<div id="player2" class="players">
+	        		<h5><span id="modalNameP2"></span> ima reč od: <input type="number" id="player2Char" style="width: 40px;" min="1" max="12" onKeyUp="if(this.value>12){this.value='12';}else if(this.value<1){this.value='1';}"> slova.</h5>
+	        	</div>
+	          	<button type="button" class="btn btn-outline-danger" onclick="checkChar();">Potvrdjujem broj slova</button>
+		   	</div>
+		</div>
+	</div>
+		<!-- modal for successful -->
+			<div class="modalBackground" id="modalSucsBG" style="display: none;">
+				<div class="modalbox success col-sm-8 col-md-6 col-lg-5 center animate" id="modalSucs">
+					<div class="icon">
+						<span class="glyphicon glyphicon-ok">√</span>
+					</div>
+					<!--/.icon-->
+					<h1>Bravo!</h1>
+					<p>Vaša reč je prihvaćena!</p>
+					<button type="button" class="redo btn" onclick="closeModal('modalSucsBG','display: none;')">OK</button>
+					<span class="change">--Serious IT Vision--</span>
+				</div>
+				<!--/.success-->
+			</div>
+			<!--/.error-->
+			<div class="modalBackground" id="modalFailedBG" style="display: none;" >
+				<div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate">
+					<div class="icon">
+						<span class="glyphicon glyphicon-thumbs-down">X</span>
+					</div>
+					<!--/.icon-->
+					<h1>Ooo Neee!</h1>
+					<p>Reč <span id="charFault"></span> nije prihvaćena!</p>
+					<button type="button" class="redo btn" onclick="closeModal('modalFailedBG','display: none;')">OK</button>
+					<span class="change">--Serious IT Vision--</span>
+				</div>
+			</div>
+				<!--/.error with num of word-->
+			<div class="modalBackground" id="modalErorBG" style="display: none;" >
+				<div class="modalbox error col-sm-8 col-md-6 col-lg-5 center animate">
+					<div class="icon">
+						<span class="glyphicon glyphicon-thumbs-down">!</span>
+					</div>
+					<!--/.icon-->
+					<h1>Uuuups!!</h1>
+					<p>Prijavili ste reč od <span id="logCharNum"></span><br>
+					a vaša reč ima <span id="charNum"></span> slova! </p>
+					<button type="button" class="redo btn" onclick="closeModal('modalErorBG','display: none;')">OK</button>
+					<span class="change">--Serious IT Vision--</span>
+				</div>
+			</div>
+	<script src="../appFramework.js" type="text/javascript"></script>		
+	<script src="charactersApp.js" type="text/javascript"></script>
+</body>
+</html>

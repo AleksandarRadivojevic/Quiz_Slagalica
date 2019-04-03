@@ -1,0 +1,191 @@
+[
+	{
+		"QuestionText" : "Spojte imena glavnih gradova sa državama gde se nalaze",
+		"left": [
+			{"left0": "Beograd"},
+			{"left1": "Atina"},
+			{"left2": "Prag"},
+			{"left3": "Stoholm"},
+			{"left4": "Sarajevo"},
+			{"left5": "Budimpešta"},
+			{"left6": "Berlin"},
+			{"left7": "Oslo"},
+			{"left8": "Podgorica"},
+			{"left9": "Madrid"}
+		],
+		"right": [
+			{"right0": "Srbija"},
+			{"right1": "Grčka"},
+			{"right2": "Češka"},
+			{"right3": "Švedska"},
+			{"right4": "Bosna"},
+			{"right5": "Madjarska"},
+			{"right6": "Nemačka"},
+			{"right7": "Norveška"},
+			{"right8": "Crna Gora"},
+			{"right9": "Španija"}
+		]
+	},
+	{
+		"QuestionText" : "Povezati fudbalske timove izmedju kojih se održava gradski derbi",
+		"left": [
+			{"left0": "PARTIZAN"},
+			{"left1": "MANCESTER JUNAJTED"},
+			{"left2": "INTER"},
+			{"left3": "BOKA JUNIORS"},
+			{"left4": "REAL MADRID"},
+			{"left5": "DINAMO"},
+			{"left6": "PAOK"},
+			{"left7": "ZELJEZNICAR"},
+			{"left8": "ARSENAL"},
+			{"left9": "RAD"}
+		],
+		"right": [
+			{"right0": "CRVENA ZVEZDA"},
+			{"right1": "LIVERPUL"},
+			{"right2": "MILANO"},
+			{"right3": "RIVER PLATE"},
+			{"right4": "BARSELONA"},
+			{"right5": "SPARTAK"},
+			{"right6": "ARIS"},
+			{"right7": "SARAJEVO"},
+			{"right8": "WEST HEM"},
+			{"right9": "VOŽDOVAC"}
+		]
+	},
+	{
+		"QuestionText" : "Povezati navijačke grupe sa klubovima za koje navijaju",
+		"left": [
+			{"left0": "PARTIZAN"},
+			{"left1": "JUVENTUS"},
+			{"left2": "VARDAR"},
+			{"left3": "BORAC CACAK"},
+			{"left4": "MANCESTER JUNAJTED"},
+			{"left5": "LOKOMOTIVA MOSKVA"},
+			{"left6": "DINAMO ZAGREB"},
+			{"left7": "FK VOZDOVAC"},
+			{"left8": "RADNIČKI KRAGUJEVAC"},
+			{"left9": "RADNIČKI NIŠ"}
+		],
+		"right": [
+			{"right0": "JUZNI FRONT"},
+			{"right1": "JUVENTUUS ULTRAS"},
+			{"right2": "KOMITI"},
+			{"right3": "čETE"},
+			{"right4": "RED ARMI"},
+			{"right5": "VIKINZI"},
+			{"right6": "BED BLU BOJSI"},
+			{"right7": "INVALIDI"},
+			{"right8": "CRVENI DJAVOLI"},
+			{"right9": "MERAKLIJE"}
+		]
+	},
+	{
+		"QuestionText" : "Povezati filmove sa godinom kada su prikazani",
+		"left": [
+			{"left0": "MARATONCI TRCE POCASNI KRUG"},
+			{"left1": "NATASA"},
+			{"left2": "RANE"},
+			{"left3": "CRNI BOMBARDER"},
+			{"left4": "TAMNA JE NOC"},
+			{"left5": "TESNA KOZA 3"},
+			{"left6": "ZIKINA DINASTIJA"},
+			{"left7": "CRNI GRUJA 2"},
+			{"left8": "TAXI BLUZ"},
+			{"left9": "JUZNI VETAR"}
+		],
+		"right": [
+			{"right0": "1982."},
+			{"right1": "2000."},
+			{"right2": "1998."},
+			{"right3": "1992."},
+			{"right4": "1995."},
+			{"right5": "1988."},
+			{"right6": "1985."},
+			{"right7": "2004."},
+			{"right8": "2019."},
+			{"right9": "2018."}
+		]
+	},
+	{
+		"QuestionText" : "Povezati sportiste sa sportovima kojim se bave",
+		"left": [
+			{"left0": "ZORAN TOSIC"},
+			{"left1": "MOMIR ILIC"},
+			{"left2": "ANA ANTONIJEVIC"},
+			{"left3": "NENAD KRSTIC"},
+			{"left4": "ZORANA ARUNOVIC"},
+			{"left5": "DRAGAN PERIC"},
+			{"left6": "STEFAN SORAK"},
+			{"left7": "SLOBODAN SORO"},
+			{"left8": "ILIJA JORGA"},
+			{"left9": "DUSAN DZAKIC"}
+		],
+		"right": [
+			{"right0": "FUDBAL"},
+			{"right1": "RUKOMET"},
+			{"right2": "ODBOJKA"},
+			{"right3": "KOSARKA"},
+			{"right4": "STRELJASTVO"},
+			{"right5": "ATLETIKA"},
+			{"right6": "PLIVANJE"},
+			{"right7": "VATERPOLO"},
+			{"right8": "KARATE"},
+			{"right9": "K1"}
+		]
+	},
+	{
+		"QuestionText" : "Povezati marke automobila sa svojim modelima",
+		"left": [
+			{"left0": "FORD"},
+			{"left1": "DACIA"},
+			{"left2": "HONDA"},
+			{"left3": "SHEVROLET"},
+			{"left4": "TOYOTA"},
+			{"left5": "HYUNDAI"},
+			{"left6": "SEAT"},
+			{"left7": "RENAULT"},
+			{"left8": "AUDI"},
+			{"left9": "MERCEDES"}
+		],
+		"right": [
+			{"right0": "FOCUS"},
+			{"right1": "DUSTER"},
+			{"right2": "ACCORD"},
+			{"right3": "AVEO"},
+			{"right4": "IQ"},
+			{"right5": "SANTA FE"},
+			{"right6": "IBIZA"},
+			{"right7": "LAGUNA"},
+			{"right8": "TT"},
+			{"right9": "G350"}
+		]
+	},
+	{
+		"QuestionText" : "Povezati marke automobila sa zemljama porekla",
+		"left": [
+			{"left0": "FORD"},
+			{"left1": "VOLVO"},
+			{"left2": "FIAT"},
+			{"left3": "RENO"},
+			{"left4": "SEAT"},
+			{"left5": "DACIJA"},
+			{"left6": "TOJOTA"},
+			{"left7": "KIA"},
+			{"left8": "AUDI"},
+			{"left9": "SKODA"}
+		],
+		"right": [
+			{"right0": "USA"},
+			{"right1": "SVEDSKA"},
+			{"right2": "ITALIJA"},
+			{"right3": "FRANCUSKA"},
+			{"right4": "SPANIJA"},
+			{"right5": "RUMUNIJA"},
+			{"right6": "JAPAN"},
+			{"right7": "JUZNA KOREJA"},
+			{"right8": "NEMACKA"},
+			{"right9": "CESKA"}
+		]
+	}
+]

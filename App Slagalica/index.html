@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Slagalica | Igra</title>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+    integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+</head>
+
+<body>
+  <aside class="profile-card" id="validation">
+    <div id="title">
+      <h1 id="textTitle">
+        <span>S</span><span>L</span><span>A</span><span>G</span><span>A</span><span>L</span><span>I</span><span>C</span><span>A</span><span>!</span>
+      </h1>
+    </div>
+    <header>
+      <!-- input for player 2 -->
+      <div id="p2">
+        <a onclick="startDisplayModal(1);">
+          <img src="Aserts/avatar.jpg" class="hoverZoomLink" id="imgP2" height="100" width="110">
+        </a><br>
+        <!-- the username -->
+        <input type="text" id="inputP2" class="inputs" placeholder="Unesi ime drugog igrača" maxlength="10"><br><br>
+        <!-- color P1 -->
+        <input id="colorP1" type="color" name="favcolor" value="#ff0000">
+        <p>Izaberi boju</p>
+      </div>
+      <div id="p1">
+        <!-- input for player 1 -->
+        <a onclick="startDisplayModal(0);">
+          <img src="Aserts/avatar.jpg" class="hoverZoomLink" id="imgP1" height="100" width="110">
+        </a><br>
+        <!-- the username -->
+        <input type="text" id="inputP1" class="inputs" placeholder="Unesi ime prvog igrača" maxlength="10"><br><br>
+        <!-- color P2 -->
+        <input id="colorP2" type="color" name="favcolor" value="#0313DD">
+        <p>Izaberi boju</p>
+      </div>
+    </header>
+
+    <button type="button" id="btn" class="btn btn-outline-danger" onclick="validation();">Započni igru!</button>
+
+    <!-- alert for input incorrect -->
+    <div class="alert alert-danger" role="alert" id="alert">
+      / Upišite imena oba igrača i učitajte slike igrača! OBAVEZNO!/
+    </div>
+    <div id="displayModal">
+      <div id="modalBackground">
+        <div id="modal">
+          <img src="Aserts/slagalicaLogo.jpg" height="100" width="150" id="logo">
+          <h4 id="close" onclick="closeModal('displayModal','none');">x</h4>
+          <h6>Izaberi sliku</h6>
+          <div id="uploadPic">
+            <label class="btn btn-default btn-sm center-block btn-file">
+              <i class="fa fa-upload fa-2x" aria-hidden="true"> Pronadji sliku iz računara</i>
+              <input type="file" accept="image/*" id="inputImg" style="display: none;">
+            </label><br>
+          </div>
+          <button type="button" id="upload" class="btn btn-outline-danger" onclick="uploadDisplayModal();">Učitaj
+            sliku</button>
+        </div>
+      </div>
+    </div>
+  </aside>
+  <script src="Game/appFramework.js" type="text/javascript"></script>
+  <script src="app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

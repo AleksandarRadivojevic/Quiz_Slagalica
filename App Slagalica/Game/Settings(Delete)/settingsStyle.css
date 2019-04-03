@@ -1,0 +1,115 @@
+html,body {
+    background: url(../../Aserts/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width:1000px;        /* Suppose you want minimum width of 1000px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+}
+#backButton {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 1.5em
+}
+#backButton:hover {
+  cursor: pointer;
+  color: orange;
+}
+h1 {
+  font-size: 3.5em;
+  color: white;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+  color: white;
+  margin: auto;
+  text-align: center;
+}
+#firstHalf {
+	padding: 10px;
+	width: 50%;
+  float: left;
+}
+#box {
+	border: 4px solid #fafafa;
+	width: 80%;
+	color: white;
+	font-size: 2em;
+	text-align: center;
+}
+#arowsBox {
+  width: 80%;
+}
+#arrowDown {
+  float: right;
+}
+#secHalf {
+	float: right;
+  text-align: center;
+  width: 48%;
+  color: white;
+}
+
+.gameBox:hover {
+  cursor: pointer;
+  background-color: #3498DB;
+}
+
+
+div.arrow {
+  width: 6vmin;
+  height: 6vmin;
+  box-sizing: border-box;
+  transform: rotate(-45deg);
+}
+div.arrow::before {
+  content: '';
+  width: 100%;
+  height: 100%;
+  border-width: .8vmin .8vmin 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transition: .2s ease;
+  display: block;
+  transform-origin: 100% 0;
+}
+div.arrow:after {
+  content: '';
+  float: left;
+  position: relative;
+  top: -100%;
+  width: 100%;
+  height: 100%;
+  border-width: 0 .8vmin 0 0;
+  border-style: solid;
+  border-color: #fafafa;
+  transform-origin: 100% 0;
+  transition: .2s ease;
+}
+div.arrow:hover::after {
+  transform: rotate(45deg);
+  border-color: orange;
+  height: 120%;
+  cursor: pointer;
+}
+div.arrow:hover::before {
+  cursor: pointer;
+  border-color: orange;
+  transform: scale(0.8);
+}
+
+#arrowUp {
+    margin-top: 4%;
+}
+
+#arrowDown {
+    transform: rotate(135deg);
+    margin-top: -11%;
+}
+
+

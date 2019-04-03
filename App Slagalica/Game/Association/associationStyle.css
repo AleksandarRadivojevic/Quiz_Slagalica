@@ -1,0 +1,203 @@
+html,body {
+    background: url(../../Aserts/background.jpg) no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    min-width:1000px;        /* Suppose you want minimum width of 1000px */
+   width: auto !important;  /* Firefox will set width as auto */
+   width:1000px;            /* As IE6 ignores !important it will set width as 1000px; */
+}
+#wrapp {
+    background: url(../../Aserts/background.jpg);
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    margin: auto;
+    text-align: center;
+    margin-top: 1%;
+}
+.positionBigDiv {
+    display: flex;
+    justify-content: center;
+}
+#finallyBtnImg {
+    display: flex;
+    object-position 
+}
+#thirdBigDiv {
+    margin-top: -112px;
+}
+#colA, #colC {
+    width: 40%;
+    margin-left: 20%;
+    text-align: right;
+    z-index: 99;
+    margin-right: 5px;
+}
+#colB, #colD {
+    z-index: 99;
+    width: 40%;
+    text-align: left;
+    margin-right: 20%;
+}
+#colB {
+    margin-left: -115px;
+}
+#colA {
+    margin-right: -188px;
+}
+#colD, #colC {
+    margin-top: 7px;
+}
+.field,.fieldRes,.correctField {
+    border: 3px solid #3498DB;
+    border-radius: 5px;
+    width: 80%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em;
+    background: #0410AB;
+    color: white;
+    margin: auto;
+    margin-bottom: 5px;
+}
+.correctField, .finallyCorrectField {
+    color: black;
+    background-color: aquamarine;
+    pointer-events : none;
+    z-index: 99;
+}
+.player {
+    border-radius: 10px;
+    background: white;
+    margin-top: -90px;
+}
+.activePlayer {
+    box-shadow: 0 0px 40px 40px rgba(0, 0, 255, 0.5);
+    border-radius: 10px;
+    background: white;
+    margin-top: -90px;
+}
+#picP1,#picP2{
+   border-radius: 10px;
+}
+#messPlayers {
+    display: flex;
+    justify-content: space-around;
+}
+.alertSwitch {
+    color: white;
+    height: 10%;
+    width: 100%;
+    font-size: 1.8em;
+    font-family: Times New Roman;
+    font-weight: bolder;
+    text-align: center;
+    margin-top: 1%;
+}
+#finally {
+    border: 3px solid #3498DB;
+    border-radius: 5px;
+    width: 40%;
+    text-align: center;
+    font-weight: 900;
+    font-size: 1.5em;
+    background: #0410AB;
+    color: white;
+    height: 5%;
+    margin-bottom: 5px;
+    z-index: 99;
+}
+#finally:hover {
+    border: 3px solid orange;
+}
+.field:hover {
+    cursor: pointer;
+    border: 3px solid orange;
+}
+.fieldRes:hover {
+    cursor: pointer;
+    border: 3px solid orange;
+}
+#A, #B, #C, #D:hover {
+    cursor: text;
+}
+#timePoints {
+    display: flex;
+    width: 30%;
+    margin-left: 11%;
+}
+#time {
+    border-radius: 5px;
+    width: 20px;
+    height: 150px;
+    background: black;
+    border: 2px solid #3498DB;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+#progress {
+    background-color: yellow;
+    width: 100%;
+    height: 1%
+}
+.pointsLook {
+    background: #0410AB;
+    border-radius: 5px;
+    color: #3498DB;
+    width: 80px;
+    height: 40px;
+    font-family: Arial;
+    font-size: 1.5em;
+    border: 2px solid #3498DB;
+    text-align: center;
+}
+#btnDalje {
+    height: 40px;
+    width: 100px;
+    border: 3px solid #0410AB;
+    border-radius: 5px;
+    background: #3498DB;
+    color: black;
+    margin-top: 50px;
+}
+#btnDalje:hover {
+    cursor: pointer;
+    background: orange;
+}
+#boxProgress {
+    visibility: hidden;
+    margin: auto;
+    border-radius: 5px;
+    width: 100%;
+    height: 10px;
+    background: aquamarine;
+    border: 2px solid #3498DB;
+}
+#progressBar {
+    background-color: #0410AB;
+    width: 1%;
+    height: 100%
+}
+
+#A2,#C2 {
+    margin-left: 0px;
+}
+#A3,#C3 {
+    margin-left: -50px;
+}
+#A4,#C4 {
+    margin-left: -100px;
+}
+
+#B2,#D2 {
+    margin-right: 0px;
+}
+#B3,#D3 {
+    margin-right: -50px;
+}
+#B4,#D4 {
+    margin-right: -100px;
+}
